@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carosuel</title>
+    <style>
+        /* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+::-webkit-scrollbar
+{
+    display: visible;
+}
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color: gray;
+        }
+        .wrap
+        {
+            width: 600px;
+            height: 170px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
+            position: absolute;
+            top: 15%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        .story
+        {
+            width: 100%;
+            height: 170px;
+            display: flex;
+            align-items: center;
+        }
+        .story-s
+        {
+            position: relative;
+            min-width: 80px;
+            max-width: 100px;
+            height: 160px;
+            /* background:red; */
+            margin-left: 10px;
+        }
+        .image
+        {
+            width: 100px;
+            height: 160px;
+            border-radius: 10px;
+            /* background: teal; */
+        }
+        .overlay
+        {
+            width: 100px;
+            height: 160px;
+            /* background-image: linear-gradient(transparent, #23494c); */
+            position: absolute;
+            top: 0;
+            border-radius: 10px;
+        }
+        .text
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* width: 50px;
+            height: 50px; */
+            /* background: orangered; */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+        }
+        .avatar
+        {
+            border-radius: 15px;
+            padding: 4px;
+            border: 2px solid white;
+            width: 40px;
+            height: 40px;
+        }
+        h4
+        {
+            margin: 13px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="story">
+            <div class="story-s">
+                <img class="image" src="" alt="">
+                <div class="overlay"></div>
+                <div class="text">
+                    <img class="avatar" src="usman.jpeg" alt="">
+                    <h4>add to story</h4>
+                </div>
+            </div>
+        </div>
+        <div class="story">
+            <div class="story-s">
+                <img class="image" src="school1.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="text">
+                    <img class="avatar" src="" alt="">
+                    <h4>add to story</h4>
+                </div>
+            </div>
+        </div><div class="story">
+            <div class="story-s">
+                <img class="image" src="papa.PNG" alt="">
+                <div class="overlay"></div>
+                <div class="text">
+                    <img class="avatar" src="" alt="">
+                    <h4>add to story</h4>
+                </div>
+            </div>
+        </div><div class="story">
+            <div class="story-s">
+                <img class="image" src="usman.jpeg" alt="">
+                <div class="overlay"></div>
+                <div class="text">
+                    <img class="avatar" src="" alt="">
+                    <h4>add to story</h4>
+                </div>
+            </div>
+        </div>
+        <div class="story">
+            <div class="story-s">
+                <img class="image" src="school1.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="text">
+                    <img class="avatar" src="" alt="">
+                    <h4>add to story</h4>
+                </div>
+            </div>
+        </div><div class="story">
+            <div class="story-s">
+                <img class="image" src="papa.PNG" alt="">
+                <div class="overlay"></div>
+                <div class="text">
+                    <img class="avatar" src="" alt="">
+                    <h4>add to story</h4>
+                </div>
+            </div>
+        </div><div class="story">
+            <div class="story-s">
+                <img class="image" src="usman.jpeg" alt="">
+                <div class="overlay"></div>
+                <div class="text">
+                    <img class="avatar" src="" alt="">
+                    <h4>add to story</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
